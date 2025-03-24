@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2C363849-8F8C-4E0B-B692-499A00BB95EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{32610955-40C9-4D27-97D9-664906C7BA46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDemo.Domain", "SalesDemo.Domain\SalesDemo.Domain.csproj", "{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32610955-40C9-4D27-97D9-664906C7BA46} = {2C363849-8F8C-4E0B-B692-499A00BB95EA}
+		{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13} = {32610955-40C9-4D27-97D9-664906C7BA46}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAF5ECB-C30B-4A64-A9DA-B16336A71D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
