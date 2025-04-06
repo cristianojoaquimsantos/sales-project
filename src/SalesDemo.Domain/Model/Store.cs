@@ -2,8 +2,7 @@ using SalesDemo.Domain.Core;
 
 namespace SalesDemo.Domain.Model;
 
-public class Store(Guid storeId,
-                   string storeName,
+public class Store(string storeName,
                    string address,
                    string district,
                    string city,
@@ -14,4 +13,6 @@ public class Store(Guid storeId,
     public string District { get; private set; } = district;
     public string City { get; private set; } = city;
     public string ZipCode { get; private set; } = zipCode;
+    
+    public virtual List<Seller>? Sellers { get; init; } = [];
 }

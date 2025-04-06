@@ -8,5 +8,5 @@ public class Category(string nameCategory,
     public string NameCategory { get; private set; } = nameCategory;
     public string DescriptionCategory { get; private set; } = descriptionCategory;
 
-    public virtual List<SubCategory> SubCategory { get; set; } = [];
+    public virtual List<SubCategory> SubCategory { get; init; } = [];
 }
