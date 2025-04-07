@@ -9,6 +9,6 @@ public class Seller(Guid storeId,
     public Guid StoreId { get; private set; } = storeId;
     public string SellerName { get; private set; } = sellerName;
 
-    public virtual Store Store { get; set; } = null!;
-    public virtual List<Sale>? Sale { get; set; } = [];
+    public virtual Store Store { get; init; } = null!;
+    public virtual List<Sale>? Sale { get; init; } = [];
 }

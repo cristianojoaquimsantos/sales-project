@@ -14,5 +14,5 @@ public class Product(Guid categoryId,
     public string Description { get; private set; } = description;
     public decimal UnitPrice { get; private set; } = unitPrice;
     
-    public virtual SubCategory SubCategory { get; init; } = null!;
+    public virtual SubCategory SubCategory { get; init; }
 }
