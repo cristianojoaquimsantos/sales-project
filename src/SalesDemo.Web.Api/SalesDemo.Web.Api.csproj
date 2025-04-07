@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SalesDemo.Infra.Data\SalesDemon.Infra.Data.csproj" />
       <ProjectReference Include="..\SalesDemon.Infra.Data\SalesDemon.Infra.Data.csproj" />
     </ItemGroup>
 
