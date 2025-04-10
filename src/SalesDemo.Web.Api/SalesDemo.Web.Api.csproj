@@ -24,7 +24,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SalesDemo.Infra.Data\SalesDemon.Infra.Data.csproj" />
-      <ProjectReference Include="..\SalesDemon.Infra.Data\SalesDemon.Infra.Data.csproj" />
+      <ProjectReference Include="..\SalesDemo.Infra.IoC.CrossCutting\SalesDemo.Infra.IoC.CrossCutting.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SalesDemo.Web.Api.Configuration;
 using SalesDemon.Infra.Data.Context;
 
 namespace SalesDemo.Web.Api;
@@ -9,16 +10,14 @@ public static class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
-        builder.Services.AddAuthorization();
-
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
-        builder.Services.AddDbContext<AppDbContext>(x =>
-        {
-            x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-        });
+        builder.Services.AddAuthorization()
+            .AddEndpointsApiExplorer()
+            .AddSwaggerGen();
+
+        builder.AddApiConfiguration()
+            .AddDatabaseConfiguration()
+            .AddDependencyInjectorConfiguration();
 
         var app = builder.Build();
 
